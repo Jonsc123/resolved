@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="titulo">Código Secreto</h1>
+      <div class="cuadrado1">
+          <h2>Ingrese su texto</h2>
+          <br>
+          <textarea id="campo1" name="textarea" rows="10" cols="50" onchange='this.value=this.value.toLowerCase();' placeholder="escriba algo aquí..." ></textarea>
+          <br>
+          <button onclick="btnEncriptar()">Encriptar</button>
+          <button onclick="btnDesEncriptar()">Desencriptar</button>
+      </div>
+
+   <div class="cuadrado2">
+            <h2>Resultado</h2>
+            <br>
+            <textarea id="campo2" name="textarea" rows="10" cols="50" onchange='this.value=this.value.toLowerCase();' placeholder="escriba algo aquí..."></textarea>
+            <br>
+            <button onclick="btnCopiar()">Copiar</button>
+      </div>
+ </div> 
+
+  <script src="script.js"></script>
+
+  <footer>Jonathan Santana © 2022</footer>
+
+
+</body>
+</html>
